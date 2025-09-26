@@ -1,7 +1,7 @@
 # Hardware
 
 <div align="center">
-<a href="{{schematic_url}}"><img src="resources/Schematics_icon.jpg?raw=false" width="200px"><br/>Schematic</a>
+<a href="./unit_sch_v_1_0_0_ue0109_bma255_accelerometer_module.pdf"><img src="resources/Schematics_icon.jpg?raw=false" width="200px"><br/>Schematic</a>
 </div>
 
 ## 🔌 Pinout
@@ -23,7 +23,7 @@
 ## 📏 Dimensions
 
 <div align="center">
-<a href="./resources/unit_dimension_v_1_0_0_icp10111_barometric_pressure_sensor.png"><img src="./resources/unit_dimension_v_1_0_0_icp10111_barometric_pressure_sensor.png" width="500px"><br/> Dimensions</a>
+<a href="./resources/unit_dimension_v_1_0_0_ue0109_bma255_accelerometer_module.png"><img src="./resources/unit_dimension_v_1_0_0_ue0109_bma255_accelerometer_module.png" width="500px"><br/> Dimensions</a>
 </div>
 
 ## 📃 Topology
@@ -31,18 +31,24 @@
 <div align="center">
 
 <div align="center">
-<a href="./resources/unit_topology_V_0_0_1_ue0099_Sensor_Touch.png"><img src="./resources/unit_topology_V_0_0_1_ue0099_Sensor_Touch.png" width="500px"><br/> Topology</a>
+<a href="./resources/unit_topology_v_1_0_0_ue0109_bma255_accelerometer_module.png"><img src="./resources/unit_topology_v_1_0_0_ue0109_bma255_accelerometer_module.png" width="500px"><br/> Topology</a>
 <br/>
 <br/>
 <br/>
 
 | Ref. | Description                              |
 |------|------------------------------------------|
-| IC1  | {{sensor_description}}                   |
+| IC1  | BMA255                                   |
 | L1   | Power On LED                             |
-| U1   | {{regulator_description}}                | 
+| U1   | AP2112K 3V3 Regulator                    | 
 | JP1  | 2.54 mm Castellated Holes                |
 | J1   | QWIIC Connector (JST 1 mm pitch) for I2C |
+| J2   | QWIIC Connector (JST 1 mm pitch) for I2C |
+| J3   | JST 1 mm pitch for SPI                   |
+| SW1  | Dip Switch for Mode Selection            |
+| SB1  | Solder Bridge for I2C Pull-Ups           |
+| SB2  | Solder Bridge for I2C Pull-Ups           |
+| SB3  | Solder Bridge for I2C Address            |
 
 </div>
 
