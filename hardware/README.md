@@ -1,7 +1,7 @@
 # Hardware
 
 <div align="center">
-<a href="./unit_sch_v_1_0_0_ue0109_bma255_accelerometer_module.pdf"><img src="resources/Schematics_icon.jpg?raw=false" width="200px"><br/>Schematic</a>
+<a href="./unit_sch_v_1_0_0_ue0109_bma250_accelerometer_module.pdf"><img src="resources/Schematics_icon.jpg?raw=false" width="200px"><br/>Schematic</a>
 </div>
 
 ## 🔌 Pinout
