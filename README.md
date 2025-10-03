@@ -18,6 +18,9 @@ This module features the BMA255, a 3-axis digital accelerometer designed for mot
   <p><em>BMA255 Digital Accelerometer Module</em></p>
 </div>
 
+
+<div align="center">
+
 ### Quick Setup
 
 
