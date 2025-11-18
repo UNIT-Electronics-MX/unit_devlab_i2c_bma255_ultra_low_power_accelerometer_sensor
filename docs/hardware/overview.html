@@ -179,23 +179,47 @@
 <div align="center">
 <div align="center"><a href="../resources/unit_sch_v_1_0_0_ue0109_bma250_accelerometer_module.pdf"><img src="../resources/Schematics_icon.jpg?raw=false" style="max-width: 500px; height: auto;" alt="Schematic"><br/> Schematic</a></div>
 </div>
+<h2 id="technical-specifications"><a class="header" href="#technical-specifications">Technical Specifications</a></h2>
+<h3 id="electrical-characteristics"><a class="header" href="#electrical-characteristics">Electrical Characteristics</a></h3>
+<div align="center">
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center"><strong>Parameter</strong></th><th style="text-align: center"><strong>Description</strong></th><th style="text-align: center"><strong>Min</strong></th><th style="text-align: center"><strong>Typ</strong></th><th style="text-align: center"><strong>Max</strong></th><th style="text-align: center"><strong>Unit</strong></th></tr></thead><tbody>
+<tr><td style="text-align: center">Vin</td><td style="text-align: center">Input voltage to power on the module</td><td style="text-align: center">2.5</td><td style="text-align: center">-</td><td style="text-align: center">5.5</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Vdd</td><td style="text-align: center">Supply Voltage for sensor</td><td style="text-align: center">1.62</td><td style="text-align: center">-</td><td style="text-align: center">3.6</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Vddio</td><td style="text-align: center">Supply Voltage for I/O</td><td style="text-align: center">1.2</td><td style="text-align: center">2.4</td><td style="text-align: center">3.6</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Idd</td><td style="text-align: center">Total Supply Current</td><td style="text-align: center">6.5</td><td style="text-align: center">-</td><td style="text-align: center">130</td><td style="text-align: center">uA</td></tr>
+<tr><td style="text-align: center">I3v3(1)</td><td style="text-align: center">Maximum current of 3V3 regulator</td><td style="text-align: center">-</td><td style="text-align: center">-</td><td style="text-align: center">600</td><td style="text-align: center">mA</td></tr>
+<tr><td style="text-align: center">Vih</td><td style="text-align: center">Input high level voltage</td><td style="text-align: center">0.7 Vddio</td><td style="text-align: center">-</td><td style="text-align: center">-</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Vil</td><td style="text-align: center">Input low level voltage</td><td style="text-align: center">-</td><td style="text-align: center">-</td><td style="text-align: center">0.3 Vddio</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Vol</td><td style="text-align: center">Output low level voltage</td><td style="text-align: center">-</td><td style="text-align: center">-</td><td style="text-align: center">0.2 Vddio</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Voh</td><td style="text-align: center">Output high level voltage</td><td style="text-align: center">0.8 Vddio</td><td style="text-align: center">-</td><td style="text-align: center">-</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Sxg(2)</td><td style="text-align: center">Sensitivity</td><td style="text-align: center">128</td><td style="text-align: center">-</td><td style="text-align: center">1024</td><td style="text-align: center">LSB/g</td></tr>
+<tr><td style="text-align: center">Off</td><td style="text-align: center">Zero-g Offset</td><td style="text-align: center">-</td><td style="text-align: center">±60</td><td style="text-align: center">-</td><td style="text-align: center">mg</td></tr>
+<tr><td style="text-align: center">bwx(3)</td><td style="text-align: center">Bandwidth</td><td style="text-align: center">8</td><td style="text-align: center">-</td><td style="text-align: center">1000</td><td style="text-align: center">Hz</td></tr>
+</tbody></table>
+</div></div>
+<p>(1) Optimal thermal management is required for the regulator to perform reliably at maximum output current.</p>
+<p>(2)(3) To get more information about minimum and maximum values and how to configure, please refer to BMA255 manufacturer datasheet.</p>
 <h2 id="pinout"><a class="header" href="#pinout">Pinout</a></h2>
 <div align="center">
     <div align="center"><a href="#"><img src="../resources/unit_pinout_v_0_0_1_ue0094_icp10111_barometric_pressure_sensor_en.jpg" style="max-width: 500px; height: auto;" alt="Pinout"><br/> Pinout</a></div>
     <br/>
     <br/>
     <br/>
-<div class="table-wrapper"><table><thead><tr><th>Pin Label</th><th>Function</th><th>Notes</th></tr></thead><tbody>
-<tr><td>VCC</td><td>Power Supply</td><td>3.3V or 5V</td></tr>
-<tr><td>GND</td><td>Ground</td><td>Common ground for all components</td></tr>
-</tbody></table>
-</div></div>
-<h2 id="dimensions"><a class="header" href="#dimensions">Dimensions</a></h2>
+</div>    
+<h3 id="pin--connector-layout"><a class="header" href="#pin--connector-layout">Pin &amp; Connector Layout</a></h3>
 <div align="center">
-<div align="center"><a href="../resources/unit_dimension_v_1_0_0_ue0109_bma255_accelerometer_module.png"><img src="../resources/unit_dimension_v_1_0_0_ue0109_bma255_accelerometer_module.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
+<div class="table-wrapper"><table><thead><tr><th>Pin</th><th>Voltage Level</th><th>Function</th></tr></thead><tbody>
+<tr><td>VCC</td><td>3.3 V – 5.5 V</td><td>Provides power to the on-board regulator and sensor core.</td></tr>
+<tr><td>GND</td><td>0 V</td><td>Common reference for power and signals.</td></tr>
+<tr><td>SDA</td><td>1.8 V to VCC</td><td>Serial data line for I²C communications.</td></tr>
+<tr><td>SCL</td><td>1.8 V to VCC</td><td>Serial clock line for I²C communications.</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p><strong>Note:</strong> The module also includes a Qwiic/STEMMA QT connector carrying the same four signals (VCC, GND, SDA, SCL) for effortless daisy-chaining.</p>
+</blockquote>
 </div>
 <h2 id="topology"><a class="header" href="#topology">Topology</a></h2>
-<div align="center">
 <div align="center">
 <div align="center"><a href="../resources/unit_topology_v_1_0_0_ue0109_bma255_accelerometer_module.png"><img src="../resources/unit_topology_v_1_0_0_ue0109_bma255_accelerometer_module.png" style="max-width: 500px; height: auto;" alt="Topology"><br/> Topology</a></div>
 <br/>
@@ -215,24 +239,13 @@
 <tr><td>SB3</td><td>Solder Bridge for I2C Address</td></tr>
 </tbody></table>
 </div></div>
-<h2 id="pin--connector-layout"><a class="header" href="#pin--connector-layout">Pin &amp; Connector Layout</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Pin</th><th>Voltage Level</th><th>Function</th></tr></thead><tbody>
-<tr><td>VCC</td><td>3.3 V – 5.5 V</td><td>Provides power to the on-board regulator and sensor core.</td></tr>
-<tr><td>GND</td><td>0 V</td><td>Common reference for power and signals.</td></tr>
-<tr><td>SDA</td><td>1.8 V to VCC</td><td>Serial data line for I²C communications.</td></tr>
-<tr><td>SCL</td><td>1.8 V to VCC</td><td>Serial clock line for I²C communications.</td></tr>
-</tbody></table>
+<h2 id="dimensions"><a class="header" href="#dimensions">Dimensions</a></h2>
+<div align="center">
+<div align="center"><a href="../resources/unit_dimension_v_1_0_0_ue0109_bma255_accelerometer_module.png"><img src="../resources/unit_dimension_v_1_0_0_ue0109_bma255_accelerometer_module.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
 </div>
-<blockquote>
-<p><strong>Note:</strong> The module also includes a Qwiic/STEMMA QT connector carrying the same four signals (VCC, GND, SDA, SCL) for effortless daisy-chaining.</p>
-</blockquote>
-<h2 id="functional-description"><a class="header" href="#functional-description">Functional Description</a></h2>
-<p>{{functional_description}}</p>
-<h2 id="applications"><a class="header" href="#applications">Applications</a></h2>
-<p>{{applications_list}}</p>
 <h1 id="references"><a class="header" href="#references">References</a></h1>
 <ul>
-<li><a href="%7B%7Bdatasheet_url%7D%7D">{{datasheet_name}}</a></li>
+<li><a href="../resources/unit_datasheet_v_1_0_0_ue0109_bma255_chip.pdf">BMA255 Datasheet</a></li>
 </ul>
 
                     </main>
@@ -243,7 +256,7 @@
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../hardware/pinout.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../hardware/technical-specifications.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -257,7 +270,7 @@
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../hardware/pinout.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../hardware/technical-specifications.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -303,7 +316,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             // Repository Link
             const repoLink = document.createElement("a");
-            repoLink.href = "https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_bma25_ultra_low_power_accelerometer_sensor";
+            repoLink.href = "https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_bma255_ultra_low_power_accelerometer_sensor";
             repoLink.target = "_blank";
             repoLink.innerHTML = "📋";
             repoLink.title = "Repository";

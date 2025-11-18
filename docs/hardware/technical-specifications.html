@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Functional Description</title>
+        <title>Technical Specifications</title>
 
 
         <!-- Custom HTML head -->
@@ -175,18 +175,36 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="functional-description"><a class="header" href="#functional-description">Functional Description</a></h1>
-<p>{{functional_description}}</p>
+                        <h1 id="technical-specifications"><a class="header" href="#technical-specifications">Technical Specifications</a></h1>
+<h3 id="electrical-characteristics"><a class="header" href="#electrical-characteristics">Electrical Characteristics</a></h3>
+<div align="center">
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center"><strong>Parameter</strong></th><th style="text-align: center"><strong>Description</strong></th><th style="text-align: center"><strong>Min</strong></th><th style="text-align: center"><strong>Typ</strong></th><th style="text-align: center"><strong>Max</strong></th><th style="text-align: center"><strong>Unit</strong></th></tr></thead><tbody>
+<tr><td style="text-align: center">Vin</td><td style="text-align: center">Input voltage to power on the module</td><td style="text-align: center">2.5</td><td style="text-align: center">-</td><td style="text-align: center">5.5</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Vdd</td><td style="text-align: center">Supply Voltage for sensor</td><td style="text-align: center">1.62</td><td style="text-align: center">-</td><td style="text-align: center">3.6</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Vddio</td><td style="text-align: center">Supply Voltage for I/O</td><td style="text-align: center">1.2</td><td style="text-align: center">2.4</td><td style="text-align: center">3.6</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Idd</td><td style="text-align: center">Total Supply Current</td><td style="text-align: center">6.5</td><td style="text-align: center">-</td><td style="text-align: center">130</td><td style="text-align: center">uA</td></tr>
+<tr><td style="text-align: center">I3v3(1)</td><td style="text-align: center">Maximum current of 3V3 regulator</td><td style="text-align: center">-</td><td style="text-align: center">-</td><td style="text-align: center">600</td><td style="text-align: center">mA</td></tr>
+<tr><td style="text-align: center">Vih</td><td style="text-align: center">Input high level voltage</td><td style="text-align: center">0.7 Vddio</td><td style="text-align: center">-</td><td style="text-align: center">-</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Vil</td><td style="text-align: center">Input low level voltage</td><td style="text-align: center">-</td><td style="text-align: center">-</td><td style="text-align: center">0.3 Vddio</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Vol</td><td style="text-align: center">Output low level voltage</td><td style="text-align: center">-</td><td style="text-align: center">-</td><td style="text-align: center">0.2 Vddio</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Voh</td><td style="text-align: center">Output high level voltage</td><td style="text-align: center">0.8 Vddio</td><td style="text-align: center">-</td><td style="text-align: center">-</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">Sxg(2)</td><td style="text-align: center">Sensitivity</td><td style="text-align: center">128</td><td style="text-align: center">-</td><td style="text-align: center">1024</td><td style="text-align: center">LSB/g</td></tr>
+<tr><td style="text-align: center">Off</td><td style="text-align: center">Zero-g Offset</td><td style="text-align: center">-</td><td style="text-align: center">±60</td><td style="text-align: center">-</td><td style="text-align: center">mg</td></tr>
+<tr><td style="text-align: center">bwx(3)</td><td style="text-align: center">Bandwidth</td><td style="text-align: center">8</td><td style="text-align: center">-</td><td style="text-align: center">1000</td><td style="text-align: center">Hz</td></tr>
+</tbody></table>
+</div></div>
+<p>(1) Optimal thermal management is required for the regulator to perform reliably at maximum output current.</p>
+<p>(2)(3) To get more information about minimum and maximum values and how to configure, please refer to BMA255 manufacturer datasheet.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../hardware/pin-&amp;-connector-layout.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../hardware/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../hardware/applications.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../hardware/pinout.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -196,11 +214,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../hardware/pin-&amp;-connector-layout.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../hardware/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../hardware/applications.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../hardware/pinout.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -246,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             // Repository Link
             const repoLink = document.createElement("a");
-            repoLink.href = "https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_bma25_ultra_low_power_accelerometer_sensor";
+            repoLink.href = "https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_bma255_ultra_low_power_accelerometer_sensor";
             repoLink.target = "_blank";
             repoLink.innerHTML = "📋";
             repoLink.title = "Repository";

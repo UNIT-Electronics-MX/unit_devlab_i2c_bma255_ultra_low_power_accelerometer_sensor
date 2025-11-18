@@ -181,20 +181,29 @@
     <br/>
     <br/>
     <br/>
-<div class="table-wrapper"><table><thead><tr><th>Pin Label</th><th>Function</th><th>Notes</th></tr></thead><tbody>
-<tr><td>VCC</td><td>Power Supply</td><td>3.3V or 5V</td></tr>
-<tr><td>GND</td><td>Ground</td><td>Common ground for all components</td></tr>
+</div>    
+<h3 id="pin--connector-layout"><a class="header" href="#pin--connector-layout">Pin &amp; Connector Layout</a></h3>
+<div align="center">
+<div class="table-wrapper"><table><thead><tr><th>Pin</th><th>Voltage Level</th><th>Function</th></tr></thead><tbody>
+<tr><td>VCC</td><td>3.3 V – 5.5 V</td><td>Provides power to the on-board regulator and sensor core.</td></tr>
+<tr><td>GND</td><td>0 V</td><td>Common reference for power and signals.</td></tr>
+<tr><td>SDA</td><td>1.8 V to VCC</td><td>Serial data line for I²C communications.</td></tr>
+<tr><td>SCL</td><td>1.8 V to VCC</td><td>Serial clock line for I²C communications.</td></tr>
 </tbody></table>
-</div></div>
+</div>
+<blockquote>
+<p><strong>Note:</strong> The module also includes a Qwiic/STEMMA QT connector carrying the same four signals (VCC, GND, SDA, SCL) for effortless daisy-chaining.</p>
+</blockquote>
+</div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../hardware/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../hardware/technical-specifications.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../hardware/dimensions.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../hardware/topology.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -204,11 +213,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../hardware/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../hardware/technical-specifications.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../hardware/dimensions.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../hardware/topology.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -254,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             // Repository Link
             const repoLink = document.createElement("a");
-            repoLink.href = "https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_bma25_ultra_low_power_accelerometer_sensor";
+            repoLink.href = "https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_bma255_ultra_low_power_accelerometer_sensor";
             repoLink.target = "_blank";
             repoLink.innerHTML = "📋";
             repoLink.title = "Repository";

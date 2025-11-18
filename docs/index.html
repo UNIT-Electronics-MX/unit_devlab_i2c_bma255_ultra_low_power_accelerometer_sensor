@@ -201,8 +201,11 @@
 <div class="table-wrapper"><table><thead><tr><th>Feature</th><th>Description</th></tr></thead><tbody>
 <tr><td>Sensor Model</td><td>BMA255</td></tr>
 <tr><td>Interface</td><td>I2C</td></tr>
+<tr><td>I2C Address</td><td>0x18 and 0x19*</td></tr>
 </tbody></table>
-</div></div>
+</div>
+<p>*0x18 is the default address, to access 0x19, solder the "Add 0x19" bridge and pull the "SDO" pin of the DIP switch to low.</p>
+</div>
 <h2 id="applications"><a class="header" href="#applications">Applications</a></h2>
 <ul>
 <li>Motion detection</li>
@@ -276,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             // Repository Link
             const repoLink = document.createElement("a");
-            repoLink.href = "https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_bma25_ultra_low_power_accelerometer_sensor";
+            repoLink.href = "https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_bma255_ultra_low_power_accelerometer_sensor";
             repoLink.target = "_blank";
             repoLink.innerHTML = "📋";
             repoLink.title = "Repository";
