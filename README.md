@@ -37,11 +37,13 @@ This module features the BMA255, a 3-axis digital accelerometer designed for mot
 ## Overview
 
 
-| Feature                      | Description                        |
-|------------------------------|------------------------------------|
-| Sensor Model                 | BMA255                             |
-| Interface                    | I2C                                |
+| Feature      | Description    |
+|--------------|----------------|
+| Sensor Model | BMA255         |
+| Interface    | I2C            |
+| I2C Address  | 0x18 and 0x19* |
 
+*0x18 is the default address, to access 0x19, solder the "Add 0x19" bridge and pull the "SDO" pin of the DIP switch to low.
 
 </div>
 
