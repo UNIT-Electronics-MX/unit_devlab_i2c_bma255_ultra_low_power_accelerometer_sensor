@@ -1,7 +1,6 @@
 
 # DevLab: I2C BMA255 Ultra-Low Power Accelerometer Sensor
 
-## Overview
 
 This module features the BMA255, a 3-axis digital accelerometer designed for motion sensing applications. It offers a standard I2C interface, making it easy to integrate into various applications requiring precise acceleration data.
 

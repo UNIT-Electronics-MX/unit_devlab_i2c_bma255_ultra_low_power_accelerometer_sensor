@@ -1,10 +1,10 @@
 /**
  * @file i2c_example.ino
- * @brief BMA250 I2C Example with Working Local Library
- * @author TinyCircuits (Original), Mr. Arduino Developer (Enhancements)
+ * @brief UBMA250 I2C Example
+ * @author Unit Electronics <cotizaciones@uelectronics.com>
  * @date 2025-09-08
  * 
- * I2C example using the proven working library from bma250_spi_test
+ * I2C example for the UBMA250 accelerometer library
  * 
  * Hardware Connections (I2C):
  * - VCC → 3.3V
@@ -22,7 +22,7 @@
 #define SCL_PIN 7
 
 // Accelerometer sensor variables
-BMA250 accel_sensor;
+UBMA250 accel_sensor;
 int x, y, z;
 double temp;
 

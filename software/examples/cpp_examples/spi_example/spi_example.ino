@@ -1,10 +1,9 @@
 /*************************************************************************
- * BMA250 SPI Example:
+ * UBMA250 SPI Example:
  * This example demonstrates how to use the BMA250 accelerometer with SPI
- * communication instead of I2C on ESP32-C6
+ * communication on ESP32-C6
  * 
- * Hardware by: TinyCircuits
- * SPI Implementation by: Assistant
+ * Maintainer: Unit Electronics <cotizaciones@uelectronics.com>
  * 
  * SPI Connections for ESP32-C6:
  * VCC  → 3.3V
@@ -27,7 +26,7 @@
 #define SCK_PIN 6
 
 // Accelerometer sensor variables
-BMA250 accel_sensor;
+UBMA250 accel_sensor;
 int x, y, z;
 double temp;
 
