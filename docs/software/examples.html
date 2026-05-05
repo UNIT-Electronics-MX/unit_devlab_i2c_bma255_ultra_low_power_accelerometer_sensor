@@ -178,52 +178,6 @@
                         <h1 id="examples"><a class="header" href="#examples">Examples</a></h1>
 <h2 id="arduinoc-examples"><a class="header" href="#arduinoc-examples">Arduino/C++ Examples</a></h2>
 <p>The following examples demonstrate various features of this development board.</p>
-<h3 id="spi_example-spi_exampleino"><a class="header" href="#spi_example-spi_exampleino">spi_example: spi_example.ino</a></h3>
-<pre><code class="language-cpp">/*************************************************************************
- * BMA250 SPI Example:
- * This example demonstrates how to use the BMA250 accelerometer with SPI
- * communication instead of I2C on ESP32-C6
- * 
- * Hardware by: TinyCircuits
- * SPI Implementation by: Assistant
- * 
- * SPI Connections for ESP32-C6:
- * VCC  → 3.3V
- * GND  → GND
- * SCK  → GPIO6 (SPI Clock)
- * MOSI → GPIO7 (Master Out Slave In)
- * MISO → GPIO2 (Master In Slave Out)
- * CS   → GPIO18 (Chip Select)
- * 
- * Created: Sep. 5/2025
- ************************************************************************/
-
-#include &lt;SPI.h&gt;
-</code></pre>
-<p><a href="https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_bma255_ultra_low_power_accelerometer_sensor/blob/main/software/examples/c/spi_example/spi_example.ino">See complete code on GitHub</a></p>
-<h3 id="i2c_example-i2c_exampleino"><a class="header" href="#i2c_example-i2c_exampleino">i2c_example: i2c_example.ino</a></h3>
-<pre><code class="language-cpp">/**
- * @file i2c_example.ino
- * @brief BMA250 I2C Example with Working Local Library
- * @author TinyCircuits (Original), Mr. Arduino Developer (Enhancements)
- * @date 2025-09-08
- * 
- * I2C example using the proven working library from bma250_spi_test
- * 
- * Hardware Connections (I2C):
- * - VCC → 3.3V
- * - GND → GND
- * - SDA → GPIO6  (or change to your preference)
- * - SCL → GPIO7  (or change to your preference)
- * - SDO → GND (for address 0x18) or VCC (for address 0x19)
- */
-
-#include &lt;Wire.h&gt;
-#include "BMA250.h"
-
-// I2C pins for ESP32-C6 (change as needed)
-</code></pre>
-<p><a href="https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_bma255_ultra_low_power_accelerometer_sensor/blob/main/software/examples/c/i2c_example/i2c_example.ino">See complete code on GitHub</a></p>
 
                     </main>
 
